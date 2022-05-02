@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord Timestamp Generator</title>
+  <link href="./style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./main.js" async defer></script>
+</head>
+<body>
+  <form>
+    <div>
+      <label for="timestamp">Date and Time</label>
+      <input id="timestamp" type="datetime-local">
+    </div>
+    <div>
+      <label>Formatting Style</label>
+      <ul>
+        <li>
+          <input type="radio" name="style" id="style_01" value="t">
+          <label for="style_01">Short Time (4:20 PM)</label>
+        </li>
+        <li>
+          <input type="radio" name="style" id="style_02" value="T">
+          <label for="style_02">Long Time (4:20:30 PM)</label>
+        </li>
+        <li>
+          <input type="radio" name="style" id="style_03" value="d">
+          <label for="style_03">Short Date (04/20/2021)</label>
+        </li>
+        <li>
+          <input type="radio" name="style" id="style_04" value="D">
+          <label for="style_04">Long Date (April 20, 2021)</label>
+        </li>
+        <li>
+          <input type="radio" name="style" id="style_05" value="f" checked>
+          <label for="style_05">Short Date/Time (April 20, 2021 4:20 PM)</label>
+        </li>
+        <li>
+          <input type="radio" name="style" id="style_06" value="F">
+          <label for="style_06">Long Date/Time (Tuesday, April 20, 2021 4:20 PM)</label>
+        </li>
+        <li>
+          <input type="radio" name="style" id="style_07" value="R">
+          <label for="style_07">Relative Time (2 months ago)</label>
+        </li>
+      </ul>
+    </div>
+    <!--
+    <div>
+      <button type="submit" id="submit">Generate</button>
+    </div>
+    -->
+
+    <div>
+      <input id="output">
+    </div>
+  </form>
+</body>
+</html>
